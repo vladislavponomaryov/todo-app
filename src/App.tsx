@@ -18,8 +18,6 @@ const App: React.FC = () => {
     });
     const [filter, setFilter] = useState<'all' | 'completed' | 'pending'>('all');
 
-
-
     useEffect(() => {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }, [tasks]);
